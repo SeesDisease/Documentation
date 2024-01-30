@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://seesdisease.github.io/Docs/sitemap.xml
