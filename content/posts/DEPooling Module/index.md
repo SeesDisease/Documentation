@@ -19,13 +19,13 @@ Im DEPooling-Net spielt das Res-Conv-Modul, ein Residual-Modul, eine Schlüsselr
 
 ![Adaptive Average Pooling Module](images/AAP.png)  
 ### Adaptive-Average-Pooling:
-Das Adaptive-Average-Pooling-Modul kommt im letzten Teil des Decoders zum Einsatz. Es extrahiert wichtige Features der zuvor erfassten Merkmale, unabhängig von der Eingabegröße. Im DEPooling-Net dient es dazu, die Höhe und Breite der Features auf ein Minimum zu reduzieren.
+Das Adaptive-Average-Pooling-Modul kommt im unteren Teil des Decoders zum Einsatz. Es extrahiert wichtige Features der zuvor erfassten Merkmale, unabhängig von der Eingabegröße. Im DEPooling-Net dient es dazu, die Höhe und Breite der Features auf ein Minimum zu reduzieren.
 
 ---
 
 ![DEPooling Module](images/DEPooling.png)  
 ### DEPooling:
-Durch die Nutzung dilatierter Convolutions erweitert das DEPooling-Modul das rezeptive Feld, um Informationsverlust zu minimieren. Diese Technik fängt Kontextinformationen detailliert auf, ohne die räumliche Auflösung des Inputs zu beeinträchtigen. Eine nachfolgende 2x2 Max-Pooling-Schicht reduziert die Dimensionen, während essentielle Merkmale erhalten bleiben. Die Mish-Aktivierungsfunktion verarbeitet diese Outputs weiter und unterstützt eine effiziente Neuronenaktivierung. Das DEPooling-Modul erhält so die Detailtreue des Inputs bei gleichzeitiger Optimierung für nachfolgende Schichten.
+Durch die Nutzung dilatierter Convolutions erweitert das DEPooling-Modul das rezeptive Feld, um Informationsverlust zu minimieren. Diese Technik fängt Kontextinformationen detailliert auf, ohne die räumliche Auflösung des Inputs zu beeinträchtigen. Eine nachfolgende Max-Pooling-Schicht reduziert die Dimensionen, während essentielle Merkmale erhalten bleiben. Die Mish-Aktivierungsfunktion verarbeitet diese Outputs weiter und unterstützt eine effiziente Neuronenaktivierung. Das DEPooling-Modul erhält so die Detailtreue des Inputs bei gleichzeitiger Optimierung für nachfolgende Schichten.
 
 ---
 
