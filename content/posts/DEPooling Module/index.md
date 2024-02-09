@@ -23,12 +23,6 @@ Das Adaptive-Average-Pooling-Modul kommt im unteren Teil des Decoders zum Einsat
 
 ---
 
-![DEPooling Module](images/DEPooling.png)  
-### DEPooling:
-Durch die Nutzung dilatierter Convolutions erweitert das DEPooling-Modul das rezeptive Feld, um Informationsverlust zu minimieren. Diese Technik fängt Kontextinformationen detailliert auf, ohne die räumliche Auflösung des Inputs zu beeinträchtigen. Eine nachfolgende Max-Pooling-Schicht reduziert die Dimensionen, während essentielle Merkmale erhalten bleiben. Die Mish-Aktivierungsfunktion verarbeitet diese Outputs weiter und unterstützt eine effiziente Neuronenaktivierung. Das DEPooling-Modul erhält so die Detailtreue des Inputs bei gleichzeitiger Optimierung für nachfolgende Schichten.
-
----
-
 ![Depthwise Separable Convolution Module](images/depthwise.png)  
 ### Depthwise-Separable-Convolution:
 Diese Technik unterteilt sich in zwei Schritte: Zuerst wird eine Depthwise-Convolution durchgeführt, wobei jeder Eingangskanal separat mit einer 3x3 gruppierten Convolution bearbeitet wird. Die Gruppierung basiert auf dem größten gemeinsamen Teiler von Eingangs- und Ausgangskanälen. Anschließend erfolgt eine Pointwise-Convolution mit einer 1x1 Convolution, die die Ergebnisse der Depthwise-Convolution zusammenführt, um die Netzwerktiefe zu erhöhen und komplexere Features zu extrahieren. In unserer Architektur ersetzen dilatierte Convolutions herkömmliche Convolutions, wobei jeder Depthwise-Convolution-Schicht eine spezifische Dilationsrate zugeordnet ist, die in tieferen Schichten progressiv ansteigt, um eine differenzierte und effiziente Extraktion von Merkmalen aus den Eingabe-Feature-Maps zu ermöglichen.
