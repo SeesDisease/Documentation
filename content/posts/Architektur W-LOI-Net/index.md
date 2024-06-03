@@ -17,7 +17,7 @@ Das Backbone-Modul des Encoders basiert auf einer Architektur, die für eine eff
 
 ### Decoder
 
-Für den Decoder-Teil wird ein Feature-Pyramid-Network (FPN) eingesetzt. Das FPN integriert die vom Encoder generierten Features auf verschiedenen Ebenen, um eine reichhaltige und skalierungsübergreifende Repräsentation zu erzeugen, die für die nachfolgenden Segmentierungsaufgaben nützlich ist.
+Für den Decoder-Teil wird ein Feature-Pyramid-Network (FPN) eingesetzt. Das FPN integriert die vom Encoder generierten Features auf verschiedenen Ebenen, um eine inhaltliche und skalierungsübergreifende Repräsentation zu erzeugen, die für die nachfolgenden Segmentierungsaufgaben nützlich ist.
 
 ## Grundlagen und Architektur des PPN
 
