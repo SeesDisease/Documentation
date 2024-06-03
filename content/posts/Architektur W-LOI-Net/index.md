@@ -13,7 +13,7 @@ Das Backbone-Modul verwendet eine Encoder/Decoder-Struktur, die essentiell für 
 
 ### Encoder
 
-Das Backbone-Moduls des Encoders basiert auf einer Architektur, die für eine effiziente und effektive Feature-Extraktion aus den Eingabebildern sorgt.
+Das Backbone-Modul des Encoders basiert auf einer Architektur, die für eine effiziente und effektive Feature-Extraktion aus den Eingabebildern sorgt.
 
 ### Decoder
 
